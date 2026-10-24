@@ -1,0 +1,61 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Story en</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@300;400;500;600&family=Noto+Serif+Devanagari:wght@500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet"><style>
+:root{--ink:#0E1233;--indigo:#1A1F4D;--gold:#C9A24B;--goldlt:#E6CB8A;--ivory:#F6EFDD;--mist:#B9BDDA;--golddk:#8a6a1f;--saffron:#E38B3A;--text:#2a2f55}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:'Jost','Noto Sans Devanagari',sans-serif;color:var(--ivory)}
+body.hi{font-family:'Noto Sans Devanagari','Jost',sans-serif}
+.serif{font-family:'Cormorant Garamond','Noto Serif Devanagari',serif}
+.hi .serif{font-family:'Noto Serif Devanagari','Cormorant Garamond',serif;letter-spacing:0!important}
+.tiro{font-family:'Tiro Devanagari Hindi','Noto Serif Devanagari',serif}
+.caps{text-transform:uppercase;letter-spacing:.26em}
+.hi .caps{letter-spacing:.03em!important;text-transform:none!important}
+.it{font-style:italic}.hi .it{font-style:normal}
+.rule{height:1px;background:var(--gold);position:relative;margin:0 auto}
+.rule:after{content:"";position:absolute;left:50%;top:-3px;width:7px;height:7px;background:var(--gold);transform:translateX(-50%) rotate(45deg)}
+.rule.l{margin-left:0}.rule.l:after{left:0;transform:rotate(45deg)}
+.dark{background:radial-gradient(ellipse at 50% 14%,#283080 0%,#151b55 36%,var(--ink) 78%);color:var(--ivory)}
+.light{background:var(--ivory) url('../art/bg-brochure.jpg') center/cover;color:var(--ink)}
+.stars{position:absolute;inset:0;pointer-events:none;opacity:.32;background-image:radial-gradient(rgba(230,203,138,.6) 1px,transparent 1.4px),radial-gradient(rgba(230,203,138,.35) 1px,transparent 1.4px),radial-gradient(rgba(255,255,255,.35) .8px,transparent 1.2px);background-size:90px 90px,53px 53px,137px 137px;background-position:0 0,27px 31px,61px 13px}
+.mand{position:absolute;pointer-events:none}
+.rel{position:relative}
+.kicker{display:flex;align-items:center;gap:10px;font-size:10.5px;color:var(--gold);font-weight:500}
+.dark .kicker{color:var(--goldlt)}
+.kicker:before,.kicker.c:after{content:"";width:26px;height:1px;background:currentColor;opacity:.7}
+.kicker.c{justify-content:center}
+.arch{border-radius:999px 999px 0 0;overflow:hidden;border:3px solid var(--gold);box-shadow:0 0 0 7px rgba(14,18,51,.92),0 0 0 8.5px var(--gold),0 22px 60px rgba(0,0,0,.45)}
+.arch img{width:100%;height:100%;object-fit:cover;object-position:50% 12%;display:block}
+.chk{list-style:none}
+.chk li{position:relative;padding-left:18px}
+.chk li:before{content:"";position:absolute;left:2px;top:.62em;width:6px;height:6px;background:var(--gold);transform:rotate(45deg)}
+.wa-pill{display:inline-flex;align-items:center;gap:12px;background:var(--ivory);color:var(--ink);border-radius:999px;border:2px solid var(--gold);text-decoration:none}
+.wa-pill .num{font-family:'Jost',sans-serif;font-weight:600;letter-spacing:.03em}
+.qr{background:var(--ivory);border-radius:10px;border:1.5px solid var(--gold)}
+.qr svg{display:block;width:100%;height:100%}
+
+body{width:1080px;height:1920px;position:relative;overflow:hidden}
+.art{position:absolute;left:0;right:0;bottom:150px;height:1180px;background:url('../art/bg-poster.jpg') center bottom/auto 100% no-repeat;-webkit-mask-image:radial-gradient(ellipse 42% 50% at 50% 66%,#000 35%,transparent 100%);opacity:.6}
+.wrap{position:relative;display:flex;flex-direction:column;align-items:center;padding-top:70px}
+.devo{font-size:26px;color:var(--goldlt);opacity:.9}
+.mk{width:88px;margin-top:18px}
+.ribbon{margin-top:30px;padding:12px 44px;border:2px solid var(--gold);border-radius:999px;font-size:25px;color:var(--goldlt);background:rgba(201,162,75,.12)}
+.hi .ribbon{font-size:31px}
+.arch{width:560px;height:650px;margin-top:40px}
+h1{font-size:100px;font-weight:600;letter-spacing:.1em;line-height:1.05;margin-top:48px;text-align:center;text-shadow:0 2px 24px rgba(14,18,51,.9)}
+.hi h1{font-size:108px;letter-spacing:0;line-height:1.25;margin-top:34px}
+.rule{width:420px;margin-top:24px}
+.ttl{margin-top:24px;font-size:22px;color:var(--goldlt);text-align:center;line-height:1.75;text-shadow:0 2px 18px rgba(14,18,51,.95)}
+.hi .ttl{font-size:32px;line-height:1.5}
+.chips{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:44px;width:900px}
+.chips span{text-align:center;border:1.5px solid var(--gold);border-radius:999px;padding:13px 10px;font-size:25px;background:rgba(14,18,51,.65);backdrop-filter:blur(4px)}
+.hi .chips span{font-size:28px}
+.bar{position:absolute;left:0;right:0;bottom:0;height:200px;background:var(--ivory);border-top:4px solid var(--gold);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:var(--ink)}
+.bar .row{display:flex;align-items:center;gap:18px}
+.bar .num{font-size:70px;font-weight:600;letter-spacing:.03em;font-family:'Jost',sans-serif}
+.bar .sub{font-size:24px;color:var(--golddk)}
+.hi .bar .sub{font-size:30px}
+</style></head><body class="en dark"><div class="art"></div><div class="stars"></div>
+<div class="wrap"><div class="devo tiro">॥ श्री हनुमते नमः ॥</div><img class="mk" src="../brand/mark.svg" alt="">
+<div class="ribbon caps">Now accepting sessions</div><div class="arch"><img src="../art/portrait-formal.jpg" alt=""></div>
+<h1 class="serif">DHIRAJ SARDA</h1><div class="rule"></div><div class="ttl caps">Past Life Regression Therapist<br>&amp; Transpersonal Hypnotherapist</div>
+<div class="chips"><span>Inner Child Healing</span><span>Migraine &amp; Pain Support</span><span>Stress · Anxiety · Depression</span><span>Past Life Regression</span></div></div>
+<div class="bar"><div class="row"><svg viewBox="0 0 24 24" width="66" height="66"><path fill="#25D366" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span class="num">+91 93501 55044</span></div><div class="sub caps">Bookings open &nbsp;·&nbsp; Delhi &amp; Online</div></div></body></html>

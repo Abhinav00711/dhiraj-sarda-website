@@ -1,0 +1,112 @@
+<!doctype html><html lang="hi"><head><meta charset="utf-8"><title>Flyer hi</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@300;400;500;600&family=Noto+Serif+Devanagari:wght@500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet"><style>
+:root{--ink:#0E1233;--indigo:#1A1F4D;--gold:#C9A24B;--goldlt:#E6CB8A;--ivory:#F6EFDD;--mist:#B9BDDA;--golddk:#8a6a1f;--saffron:#E38B3A;--text:#2a2f55}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:'Jost','Noto Sans Devanagari',sans-serif;color:var(--ivory)}
+body.hi{font-family:'Noto Sans Devanagari','Jost',sans-serif}
+.serif{font-family:'Cormorant Garamond','Noto Serif Devanagari',serif}
+.hi .serif{font-family:'Noto Serif Devanagari','Cormorant Garamond',serif;letter-spacing:0!important}
+.tiro{font-family:'Tiro Devanagari Hindi','Noto Serif Devanagari',serif}
+.caps{text-transform:uppercase;letter-spacing:.26em}
+.hi .caps{letter-spacing:.03em!important;text-transform:none!important}
+.it{font-style:italic}.hi .it{font-style:normal}
+.rule{height:1px;background:var(--gold);position:relative;margin:0 auto}
+.rule:after{content:"";position:absolute;left:50%;top:-3px;width:7px;height:7px;background:var(--gold);transform:translateX(-50%) rotate(45deg)}
+.rule.l{margin-left:0}.rule.l:after{left:0;transform:rotate(45deg)}
+.dark{background:radial-gradient(ellipse at 50% 14%,#283080 0%,#151b55 36%,var(--ink) 78%);color:var(--ivory)}
+.light{background:var(--ivory) url('../art/bg-brochure.jpg') center/cover;color:var(--ink)}
+.stars{position:absolute;inset:0;pointer-events:none;opacity:.32;background-image:radial-gradient(rgba(230,203,138,.6) 1px,transparent 1.4px),radial-gradient(rgba(230,203,138,.35) 1px,transparent 1.4px),radial-gradient(rgba(255,255,255,.35) .8px,transparent 1.2px);background-size:90px 90px,53px 53px,137px 137px;background-position:0 0,27px 31px,61px 13px}
+.mand{position:absolute;pointer-events:none}
+.rel{position:relative}
+.kicker{display:flex;align-items:center;gap:10px;font-size:10.5px;color:var(--gold);font-weight:500}
+.dark .kicker{color:var(--goldlt)}
+.kicker:before,.kicker.c:after{content:"";width:26px;height:1px;background:currentColor;opacity:.7}
+.kicker.c{justify-content:center}
+.arch{border-radius:999px 999px 0 0;overflow:hidden;border:3px solid var(--gold);box-shadow:0 0 0 7px rgba(14,18,51,.92),0 0 0 8.5px var(--gold),0 22px 60px rgba(0,0,0,.45)}
+.arch img{width:100%;height:100%;object-fit:cover;object-position:50% 12%;display:block}
+.chk{list-style:none}
+.chk li{position:relative;padding-left:18px}
+.chk li:before{content:"";position:absolute;left:2px;top:.62em;width:6px;height:6px;background:var(--gold);transform:rotate(45deg)}
+.wa-pill{display:inline-flex;align-items:center;gap:12px;background:var(--ivory);color:var(--ink);border-radius:999px;border:2px solid var(--gold);text-decoration:none}
+.wa-pill .num{font-family:'Jost',sans-serif;font-weight:600;letter-spacing:.03em}
+.qr{background:var(--ivory);border-radius:10px;border:1.5px solid var(--gold)}
+.qr svg{display:block;width:100%;height:100%}
+
+body{width:1240px;height:1754px;position:relative;overflow:hidden;background:var(--ink)}
+.top{position:absolute;left:0;right:0;top:0;height:800px;overflow:hidden}
+.top .mand{width:1100px;left:-300px;top:-160px;opacity:.12}
+.devo{position:absolute;left:0;right:0;top:40px;text-align:center;font-size:22px;color:var(--goldlt);opacity:.9}
+.top .arch{position:absolute;left:90px;top:120px;width:440px;height:560px}
+.who{position:absolute;left:600px;right:60px;top:120px}
+.who .mk{width:84px}
+.who h1{font-size:60px;font-weight:600;letter-spacing:.09em;line-height:1.02;margin-top:22px;white-space:nowrap}
+.hi .who h1{font-size:82px;letter-spacing:0;line-height:1.25}
+.who .rule{width:200px;margin:28px 0 24px}
+.who .ttl{font-size:19px;color:var(--goldlt);line-height:1.8}
+.hi .who .ttl{font-size:26px;line-height:1.55}
+.who .tag{font-size:36px;font-style:italic;margin-top:24px;line-height:1.25}
+.hi .who .tag{font-style:normal;font-size:33px}
+.who .tag span{color:var(--goldlt)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.chips span{border:1.5px solid rgba(201,162,75,.8);border-radius:999px;padding:8px 18px;font-size:16px;background:rgba(201,162,75,.08)}
+.hi .chips span{font-size:19px}
+.mid{position:absolute;left:0;right:0;top:760px;height:720px;padding:46px 70px 0;border-top:3px solid var(--gold);border-radius:44px 44px 0 0}
+.sh{display:flex;align-items:center;gap:18px;font-size:16px;color:var(--golddk);font-weight:600;margin-bottom:20px}
+.hi .sh{font-size:21px}
+.sh:after{content:"";flex:1;height:1px;background:rgba(201,162,75,.6)}
+.sv{display:grid;grid-template-columns:repeat(3,1fr);gap:14px 18px;margin-bottom:34px}
+.sv>div{display:flex;align-items:center;gap:14px;background:rgba(255,255,255,.6);border:1px solid rgba(201,162,75,.6);border-radius:14px;padding:13px 16px}
+.sv>div.new{border:1.5px solid var(--saffron);background:rgba(255,255,255,.85)}
+.sv .ib{width:54px;height:54px;border-radius:50%;background:var(--ink);display:flex;align-items:center;justify-content:center;flex:none}
+.sv h4{font-size:23px;font-weight:600;color:var(--ink);line-height:1.1}
+.hi .sv h4{font-size:21px;line-height:1.35}
+.ar{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.ar .q{background:rgba(255,255,255,.55);border-top:3px solid var(--gold);border-radius:4px 4px 14px 14px;padding:16px 18px 14px}
+.ar .q.body{border-top-color:var(--saffron);background:rgba(255,255,255,.8)}
+.ar h4{font-size:28px;font-weight:600;color:var(--ink);display:flex;align-items:center;gap:10px}
+.hi .ar h4{font-size:25px}
+.ar ul{font-size:17.5px;line-height:1.75;color:var(--text);margin-top:8px}
+.hi .ar ul{font-size:18.5px;line-height:1.7}
+.ar .chk li{padding-left:16px}.ar .chk li:before{width:6px;height:6px}
+.nt{font-size:15px;color:var(--text);margin-top:16px;text-align:center;font-style:italic}
+.hi .nt{font-style:normal;font-size:17px}
+.bot{position:absolute;left:0;right:0;top:1480px;bottom:0;padding:0 70px}
+.bot .mand{width:900px;right:-350px;top:-200px;opacity:.08}
+.ins{display:flex;align-items:center;gap:22px;padding-top:22px;width:560px}
+.ins .em{width:120px;height:120px;flex:none}
+.ins h3{font-size:32px;font-weight:600;color:var(--ivory)}
+.hi .ins h3{font-size:30px}
+.ins .v{font-size:25px;color:var(--goldlt);line-height:1.4;margin-top:4px}
+.ins .src{font-size:13px;color:var(--gold);margin-top:2px}
+.hi .ins .src{font-size:16px}
+.ct{position:absolute;right:70px;top:20px;display:flex;align-items:center;gap:20px}
+.ct .wa-pill{padding:12px 28px 12px 18px}
+.ct .wa-pill .num{font-size:34px}
+.ct .qr{width:130px;height:130px;padding:9px}
+.ct .loc{font-size:15px;text-align:center;margin-top:10px;color:var(--ivory)}
+.ct .eml{font-size:17px;text-align:center;margin-top:6px;color:var(--goldlt);letter-spacing:.03em}
+.hi .ct .loc{font-size:18px}
+.disc{position:absolute;left:70px;right:70px;bottom:22px;font-size:13px;line-height:1.5;color:var(--mist);text-align:center;border-top:1px solid rgba(201,162,75,.4);padding-top:12px}
+.hi .disc{font-size:14.5px}
+</style></head><body class="hi ">
+<div class="top dark"><div class="stars"></div><img class="mand" src="../brand/mandala.svg" alt="">
+  <div class="devo tiro">॥ श्री हनुमते नमः ॥</div>
+  <div class="arch"><img src="../art/portrait-formal.jpg" alt=""></div>
+  <div class="who"><img class="mk" src="../brand/mark.svg" alt=""><h1 class="serif">धीरज सारड़ा</h1><div class="rule l"></div>
+    <div class="ttl caps">पास्ट लाइफ रिग्रेशन थेरेपिस्ट<br>एवं ट्रांसपर्सनल हिप्नोथेरेपिस्ट</div><div class="tag serif">भीतर की यात्रा।<br><span>जड़ से उपचार की ओर।</span></div>
+    <div class="chips"><span>IPHM (यूके) मान्यता प्राप्त डिप्लोमा</span><span>इंटरनेशनल पास्ट लाइफ एकेडमी (IPLA) से प्रशिक्षण</span><span>दिल्ली एवं ऑनलाइन</span></div></div></div>
+<div class="mid light">
+  <div class="sh caps">मैं आपका मार्गदर्शन कैसे कर सकता हूँ</div><div class="sv"><div class=""><div class="ib"><svg viewBox="0 0 48 48" width="34" height="34" fill="none" stroke="#E6CB8A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 6h20M14 42h20M16 6c0 10 16 10 16 18S16 32 16 42M32 6c0 10-16 10-16 18s16 8 16 18"/><path d="M20 38h8" opacity=".6"/></svg></div><h4 class="serif">पास्ट लाइफ रिग्रेशन</h4></div><div class=""><div class="ib"><svg viewBox="0 0 48 48" width="34" height="34" fill="none" stroke="#E6CB8A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24.0 24.0 L24.2 24.0 L24.4 24.1 L24.5 24.3 L24.6 24.5 L24.6 24.7 L24.6 25.0 L24.5 25.2 L24.3 25.5 L24.1 25.7 L23.8 25.9 L23.4 26.0 L23.0 26.1 L22.6 26.0 L22.1 25.9 L21.7 25.7 L21.3 25.3 L20.9 24.9 L20.6 24.4 L20.4 23.8 L20.3 23.2 L20.3 22.5 L20.4 21.8 L20.7 21.2 L21.1 20.5 L21.6 19.9 L22.3 19.4 L23.0 19.0 L23.9 18.7 L24.8 18.6 L25.8 18.6 L26.7 18.8 L27.7 19.2 L28.5 19.7 L29.3 20.4 L30.0 21.3 L30.6 22.3 L31.0 23.4 L31.2 24.6 L31.1 25.8 L30.9 27.1 L30.5 28.3 L29.8 29.4 L28.9 30.5 L27.9 31.4 L26.6 32.1 L25.3 32.6 L23.8 32.9 L22.3 32.9 L20.8 32.7 L19.3 32.2 L17.9 31.4 L16.6 30.4 L15.4 29.2 L14.5 27.8 L13.8 26.2 L13.4 24.4 L13.3 22.7 L13.5 20.8 L14.0 19.0 L14.8 17.3 L15.9 15.8 L17.3 14.4 L18.9 13.2 L20.7 12.4 L22.7 11.8 L24.8 11.6 L26.9 11.7 L29.0 12.2 L31.0 13.0 L32.8 14.2 L34.5 15.7 L35.9 17.4 L37.0 19.5 L37.8 21.7 L38.2 24.0 L38.2 26.4 L37.7 28.8 L36.9 31.1 L35.7 33.3 L34.1 35.2 L32.2 36.9 L30.0 38.3 L27.6 39.3 L25.0 39.8 L22.3 40.0 L19.6 39.6 L17.0 38.9 L14.5 37.6 L12.2 36.0 L10.2 34.0"/></svg></div><h4 class="serif">ट्रांसपर्सनल हिप्नोथेरेपी</h4></div><div class="new"><div class="ib"><svg viewBox="0 0 48 48" width="34" height="34" fill="none" stroke="#E6CB8A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 41 C 9 31, 4 22, 9 14.5 C 13.5 8.5, 21 9.5, 24 15.5 C 27 9.5, 34.5 8.5, 39 14.5 C 44 22, 39 31, 24 41 Z"/><circle cx="24" cy="20" r="3"/><path d="M24 23.5v6.5M20 26.5l4-1.5 4 1.5M24 30l-3 4.5M24 30l3 4.5"/></svg></div><h4 class="serif">इनर चाइल्ड हीलिंग</h4></div><div class=""><div class="ib"><svg viewBox="0 0 48 48" width="34" height="34" fill="none" stroke="#E6CB8A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 24a14 14 0 1 0 4.5-10.3"/><path d="M8 8v8h8"/><path d="M24 15v10l6 4"/></svg></div><h4 class="serif">एज रिग्रेशन</h4></div><div class=""><div class="ib"><svg viewBox="0 0 48 48" width="34" height="34" fill="none" stroke="#E6CB8A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 42c-10-4-14-12-12-22 8 0 14 4 12 22z"/><path d="M24 42c10-4 14-12 12-22-8 0-14 4-12 22z"/><circle cx="24" cy="16" r="5"/></svg></div><h4 class="serif">वॉम्ब रिग्रेशन</h4></div><div class=""><div class="ib"><svg viewBox="0 0 48 48" width="34" height="34" fill="none" stroke="#E6CB8A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="10" r="4"/><path d="M17 31c.5-8 3-13 7-13s6.5 5 7 13"/><path d="M18 24c-3 3-5 6-4 9M30 24c3 3 5 6 4 9"/><path d="M7 37c6-5 28-5 34 0-6 4-28 4-34 0z"/></svg></div><h4 class="serif">गाइडेड मेडिटेशन</h4></div></div>
+  <div class="sh caps">मन, शरीर, हृदय और आत्मा के लिए सहयोग</div><div class="ar"><div class="q mind"><h4 class="serif"><svg viewBox="0 0 48 48" width="34" height="34" fill="none" stroke="#8a6a1f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M29 42v-6h5c2 0 3-1 3-3v-5l3.5-1-3.5-6.5C37 11 31 6 23 6 14.5 6 8 12 8 20.5c0 5.5 2.5 9.5 6 12V42"/><path d="M23.0 20.0 L23.1 20.0 L23.2 20.1 L23.2 20.1 L23.3 20.2 L23.3 20.3 L23.3 20.4 L23.3 20.5 L23.2 20.6 L23.1 20.7 L23.0 20.8 L22.9 20.9 L22.7 21.0 L22.6 21.0 L22.4 21.0 L22.2 20.9 L22.0 20.8 L21.8 20.7 L21.6 20.6 L21.5 20.4 L21.3 20.1 L21.3 19.9 L21.2 19.6 L21.2 19.3 L21.3 19.0 L21.4 18.7 L21.6 18.4 L21.8 18.1 L22.1 17.9 L22.4 17.7 L22.7 17.5 L23.1 17.4 L23.5 17.4 L24.0 17.4 L24.4 17.5 L24.8 17.7 L25.2 17.9 L25.5 18.3 L25.9 18.6 L26.1 19.1 L26.3 19.5 L26.4 20.0 L26.5 20.6 L26.4 21.1 L26.3 21.7 L26.0 22.2 L25.7 22.7 L25.3 23.2 L24.9 23.5 L24.3 23.9 L23.7 24.1 L23.1 24.2 L22.4 24.3 L21.8 24.2 L21.1 24.1 L20.4 23.8 L19.8 23.4 L19.3 23.0 L18.8 22.4 L18.4 21.7 L18.1 21.0 L17.9 20.3 L17.9 19.5 L17.9 18.7 L18.1 17.9 L18.4 17.1 L18.8 16.4 L19.4 15.7 L20.0 15.2 L20.8 14.7 L21.6 14.3 L22.5 14.1 L23.4 14.0 L24.3 14.1 L25.2 14.3 L26.1 14.6 L27.0 15.1 L27.7 15.7 L28.4 16.4 L29.0 17.2 L29.4 18.2 L29.7 19.2 L29.8 20.2 L29.8 21.2 L29.6 22.3 L29.3 23.3 L28.7 24.3 L28.1 25.2 L27.3 26.0 L26.3 26.6 L25.3 27.1" stroke-width="1.7"/></svg>मन</h4><ul class="chk"><li>तनाव और चिंता</li><li>डिप्रेशन और उदासी</li><li>अधिक सोचना (ओवरथिंकिंग)</li><li>नींद की समस्या</li><li>डर और फोबिया</li></ul></div><div class="q body"><h4 class="serif"><svg viewBox="0 0 48 48" width="34" height="34" fill="none" stroke="#8a6a1f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="10" r="4"/><path d="M24 15v13M15 19l9 3 9-3M24 28l-5 12M24 28l5 12"/><path d="M8 14a20 20 0 0 0 0 20M40 14a20 20 0 0 1 0 20" opacity=".6"/><path d="M4 10a26 26 0 0 0 0 28M44 10a26 26 0 0 1 0 28" opacity=".35"/></svg>शरीर</h4><ul class="chk"><li>माइग्रेन और सिरदर्द</li><li>पुराना व अनजाना दर्द</li><li>शुगर (डायबिटीज़): तनाव व क्रेविंग</li><li>वज़न और खान-पान की आदतें</li><li>धूम्रपान व अन्य आदतें</li></ul></div><div class="q heart"><h4 class="serif"><svg viewBox="0 0 48 48" width="34" height="34" fill="none" stroke="#8a6a1f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 41 C 9 31, 4 22, 9 14.5 C 13.5 8.5, 21 9.5, 24 15.5 C 27 9.5, 34.5 8.5, 39 14.5 C 44 22, 39 31, 24 41 Z"/><path d="M24 33c-5-3.2-7.5-6.5-6-9.5 1.3-2.4 4.4-2.3 6 .3 1.6-2.6 4.7-2.7 6-.3 1.5 3-1 6.3-6 9.5z" opacity=".7"/></svg>हृदय</h4><ul class="chk"><li>रिश्तों के पैटर्न</li><li>दुःख और क्षति</li><li>क्रोध और अपराध-बोध</li><li>आत्म-सम्मान और आत्मविश्वास</li><li>बचपन के घाव (इनर चाइल्ड)</li></ul></div><div class="q soul"><h4 class="serif"><svg viewBox="0 0 48 48" width="34" height="34" fill="none" stroke="#8a6a1f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6c5 6 7.5 11 5 16-1.2 2.5-3 3.5-5 3.5s-3.8-1-5-3.5c-2.5-5 0-10 5-16z"/><path d="M24 16c1.8 2.3 2.4 4.3 1.5 6"/><path d="M8 30c2 8 8.5 11 16 11s14-3 16-11z"/><path d="M5 30h38"/></svg>आत्मा</h4><ul class="chk"><li>पिछले जन्मों के पैटर्न</li><li>जीवन का उद्देश्य और दिशा</li><li>बार-बार दोहराते जीवन-चक्र</li><li>आध्यात्मिक विकास</li><li>आंतरिक शांति</li></ul></div></div>
+  <div class="nt serif">पूरक पद्धति। चिकित्सा का विकल्प नहीं &mdash; कृपया डॉक्टर का उपचार जारी रखें।</div></div>
+<div class="bot dark"><div class="stars"></div><img class="mand" src="../brand/mandala.svg" alt="">
+  <div class="ins rel"><div class="em"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="#C9A24B" stroke-width="1.6" stroke-linecap="round">
+  <defs><radialGradient id="rhg" cx="50%" cy="55%" r="50%"><stop offset="0" stop-color="#E38B3A" stop-opacity=".45"/><stop offset="1" stop-color="#E38B3A" stop-opacity="0"/></radialGradient></defs>
+  <circle cx="100" cy="104" r="80" fill="url(#rhg)" stroke="none"/>
+  <path d="M186.0 104.0L198.0 104.0" opacity="0.75"/><path d="M183.1 126.3L188.9 127.8" opacity="0.45"/><path d="M174.5 147.0L184.9 153.0" opacity="0.75"/><path d="M160.8 164.8L165.1 169.1" opacity="0.45"/><path d="M143.0 178.5L149.0 188.9" opacity="0.75"/><path d="M122.3 187.1L123.8 192.9" opacity="0.45"/><path d="M100.0 190.0L100.0 202.0" opacity="0.75"/><path d="M77.7 187.1L76.2 192.9" opacity="0.45"/><path d="M57.0 178.5L51.0 188.9" opacity="0.75"/><path d="M39.2 164.8L34.9 169.1" opacity="0.45"/><path d="M25.5 147.0L15.1 153.0" opacity="0.75"/><path d="M16.9 126.3L11.1 127.8" opacity="0.45"/><path d="M14.0 104.0L2.0 104.0" opacity="0.75"/><path d="M16.9 81.7L11.1 80.2" opacity="0.45"/><path d="M25.5 61.0L15.1 55.0" opacity="0.75"/><path d="M39.2 43.2L34.9 38.9" opacity="0.45"/><path d="M57.0 29.5L51.0 19.1" opacity="0.75"/><path d="M77.7 20.9L76.2 15.1" opacity="0.45"/><path d="M100.0 18.0L100.0 6.0" opacity="0.75"/><path d="M122.3 20.9L123.8 15.1" opacity="0.45"/><path d="M143.0 29.5L149.0 19.1" opacity="0.75"/><path d="M160.8 43.2L165.1 38.9" opacity="0.45"/><path d="M174.5 61.0L184.9 55.0" opacity="0.75"/><path d="M183.1 81.7L188.9 80.2" opacity="0.45"/>
+  <path d="M100 168 C 46 132, 24 98, 40 70 C 54 46, 86 48, 100 74 C 114 48, 146 46, 160 70 C 176 98, 154 132, 100 168 Z" stroke-width="2.4"/>
+  <path d="M100 158 C 54 127, 35 98, 48 74 C 60 54, 87 56, 100 80 C 113 56, 140 54, 152 74 C 165 98, 146 127, 100 158 Z" stroke-width="1" opacity=".6"/>
+  <text x="100" y="124" text-anchor="middle" font-family="'Tiro Devanagari Hindi','Noto Serif Devanagari',serif" font-size="46" font-weight="700" fill="#E38B3A" stroke="none">राम</text>
+</svg></div><div><h3 class="serif">अपनी शक्ति को याद कीजिए</h3><div class="v tiro">नासै रोग हरै सब पीरा।<br>जपत निरंतर हनुमत बीरा॥</div><div class="src caps">श्री हनुमान चालीसा</div></div></div>
+  <div class="ct"><div style="text-align:center"><a class="wa-pill" href="https://wa.me/919350155044?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%87%20%E0%A4%A7%E0%A5%80%E0%A4%B0%E0%A4%9C%20%E0%A4%9C%E0%A5%80%2C%20%E0%A4%AE%E0%A5%88%E0%A4%82%20%E0%A4%8F%E0%A4%95%20%E0%A4%B8%E0%A4%A4%E0%A5%8D%E0%A4%B0%20%E0%A4%AC%E0%A5%81%E0%A4%95%20%E0%A4%95%E0%A4%B0%E0%A4%A8%E0%A4%BE%20%E0%A4%9A%E0%A4%BE%E0%A4%B9%E0%A4%A4%E0%A4%BE/%E0%A4%9A%E0%A4%BE%E0%A4%B9%E0%A4%A4%E0%A5%80%20%E0%A4%B9%E0%A5%82%E0%A4%81%E0%A5%A4"><svg viewBox="0 0 24 24" width="40" height="40"><path fill="#25D366" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span class="num">+91 93501 55044</span></a><div class="loc caps">WhatsApp पर बुक करें &nbsp;·&nbsp; दिल्ली एवं ऑनलाइन</div><div class="eml">dhirajsarda79@gmail.com</div></div><div class="qr"><svg viewBox="0 0 41 41" class="segno"><path class="qrline" stroke="#0e1233" d="M0 0.5h7m3 0h1m2 0h5m1 0h1m3 0h1m4 0h1m2 0h1m2 0h7m-41 1h1m5 0h1m2 0h1m1 0h2m2 0h3m3 0h1m2 0h1m2 0h1m1 0h2m3 0h1m5 0h1m-41 1h1m1 0h3m1 0h1m1 0h1m2 0h2m1 0h2m1 0h3m1 0h2m4 0h2m1 0h2m2 0h1m1 0h3m1 0h1m-41 1h1m1 0h3m1 0h1m1 0h2m1 0h1m1 0h2m5 0h1m1 0h2m1 0h2m1 0h3m3 0h1m1 0h3m1 0h1m-41 1h1m1 0h3m1 0h1m1 0h2m1 0h2m3 0h1m1 0h2m1 0h1m1 0h1m1 0h2m4 0h2m1 0h1m1 0h3m1 0h1m-41 1h1m5 0h1m1 0h1m1 0h1m1 0h1m2 0h1m2 0h1m2 0h2m2 0h5m2 0h1m1 0h1m5 0h1m-41 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-33 1h1m1 0h1m3 0h1m3 0h2m1 0h2m1 0h1m1 0h3m3 0h1m-33 1h1m1 0h5m2 0h1m2 0h3m2 0h2m1 0h1m2 0h1m1 0h1m1 0h1m1 0h1m1 0h2m1 0h5m-38 1h1m6 0h1m7 0h1m2 0h1m1 0h4m1 0h1m3 0h3m1 0h1m1 0h1m1 0h1m1 0h1m-41 1h1m1 0h3m1 0h3m2 0h1m3 0h1m2 0h1m1 0h1m4 0h1m1 0h2m1 0h1m1 0h1m1 0h1m4 0h1m-37 1h2m2 0h1m1 0h1m1 0h1m4 0h1m1 0h1m1 0h2m1 0h2m2 0h2m2 0h2m1 0h1m1 0h2m-36 1h3m1 0h2m4 0h2m2 0h2m4 0h1m1 0h2m1 0h3m1 0h2m2 0h1m1 0h2m-39 1h4m1 0h1m2 0h1m2 0h3m1 0h1m2 0h1m4 0h1m2 0h1m4 0h1m1 0h2m1 0h2m2 0h1m-40 1h6m2 0h1m2 0h1m1 0h1m1 0h1m1 0h1m2 0h1m4 0h2m2 0h1m1 0h2m2 0h1m2 0h1m-39 1h1m3 0h1m1 0h2m3 0h1m1 0h2m2 0h1m2 0h4m5 0h1m1 0h1m1 0h4m-38 1h2m1 0h1m2 0h1m2 0h3m1 0h1m1 0h1m1 0h1m2 0h1m1 0h1m1 0h2m1 0h1m1 0h1m2 0h2m1 0h1m2 0h1m-38 1h4m2 0h2m1 0h2m1 0h1m2 0h1m2 0h1m3 0h1m4 0h1m2 0h1m2 0h3m3 0h1m-40 1h2m1 0h1m1 0h2m1 0h1m4 0h1m3 0h1m1 0h1m1 0h1m1 0h2m1 0h2m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m-38 1h2m4 0h2m1 0h2m1 0h2m5 0h3m1 0h1m1 0h3m1 0h1m1 0h1m3 0h2m2 0h1m-41 1h2m1 0h1m2 0h2m1 0h2m2 0h1m4 0h1m1 0h1m1 0h1m1 0h4m1 0h1m10 0h1m-41 1h2m1 0h1m3 0h2m3 0h3m4 0h1m1 0h1m1 0h1m1 0h1m4 0h4m1 0h2m2 0h2m-41 1h1m1 0h1m3 0h1m2 0h2m1 0h4m4 0h2m2 0h1m2 0h2m1 0h1m1 0h2m4 0h1m-39 1h1m1 0h1m4 0h1m1 0h1m1 0h6m1 0h1m1 0h2m2 0h1m1 0h3m4 0h1m2 0h1m2 0h2m-39 1h1m3 0h1m3 0h1m3 0h1m2 0h2m1 0h1m2 0h1m1 0h1m1 0h1m1 0h2m4 0h1m1 0h2m-37 1h3m3 0h1m1 0h1m1 0h2m2 0h2m1 0h1m1 0h4m1 0h1m1 0h1m1 0h2m1 0h1m2 0h2m1 0h2m-41 1h1m2 0h1m1 0h2m2 0h3m1 0h6m1 0h2m5 0h4m1 0h1m1 0h3m2 0h1m-37 1h3m2 0h2m5 0h2m1 0h1m1 0h3m1 0h1m2 0h2m2 0h2m1 0h4m2 0h1m-40 1h6m4 0h1m3 0h3m4 0h2m2 0h1m1 0h2m1 0h1m3 0h1m1 0h2m1 0h1m-41 1h1m1 0h1m2 0h1m1 0h1m1 0h1m1 0h1m4 0h1m1 0h1m4 0h1m7 0h1m1 0h5m1 0h2m-41 1h1m3 0h1m1 0h3m3 0h1m3 0h1m9 0h4m2 0h3m1 0h2m1 0h1m-40 1h1m1 0h1m1 0h1m2 0h2m1 0h1m1 0h3m1 0h1m1 0h7m1 0h3m2 0h1m1 0h2m2 0h1m-38 1h1m4 0h2m1 0h4m1 0h1m1 0h3m1 0h1m2 0h1m2 0h1m1 0h3m1 0h10m-33 1h1m3 0h2m3 0h3m3 0h2m1 0h1m1 0h1m1 0h1m1 0h1m3 0h1m3 0h1m-41 1h7m2 0h1m2 0h1m4 0h1m2 0h1m1 0h1m1 0h1m1 0h3m1 0h3m1 0h1m1 0h4m-40 1h1m5 0h1m1 0h1m2 0h3m3 0h2m1 0h2m1 0h2m1 0h1m1 0h1m3 0h1m3 0h1m2 0h1m-40 1h1m1 0h3m1 0h1m1 0h2m2 0h1m1 0h1m1 0h1m7 0h3m2 0h2m1 0h5m1 0h1m-39 1h1m1 0h3m1 0h1m1 0h3m2 0h1m1 0h1m1 0h3m1 0h1m1 0h1m2 0h1m1 0h4m1 0h1m1 0h1m3 0h2m-41 1h1m1 0h3m1 0h1m1 0h1m3 0h1m3 0h3m2 0h1m2 0h1m2 0h1m1 0h1m2 0h5m-37 1h1m5 0h1m2 0h2m5 0h1m1 0h2m1 0h2m3 0h3m1 0h1m1 0h1m1 0h1m1 0h2m1 0h1m-40 1h7m1 0h1m1 0h4m2 0h5m4 0h1m1 0h1m1 0h1m1 0h1m1 0h4m1 0h1"/></svg></div></div>
+  <div class="disc">पास्ट लाइफ रिग्रेशन और हिप्नोथेरेपी पूरक पद्धतियाँ हैं, जो चिकित्सा और मानसिक स्वास्थ्य उपचार के साथ-साथ चलती हैं &mdash; उनके स्थान पर नहीं। ये किसी रोग का निदान, इलाज या उपचार नहीं करतीं, और अनुभव हर व्यक्ति में अलग हो सकते हैं। कृपया डॉक्टर द्वारा दी गई दवाइयाँ और उपचार जारी रखें।</div></div></body></html>

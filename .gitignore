@@ -1,0 +1,14 @@
+# Private - never publish (repo is public for GitHub Pages)
+Certificate.png
+References/
+OwnImages/
+
+# Old drafts - still name the trainer
+Build/_previous/
+Build/out/_previous/
+
+# Generated / local
+Dhiraj-Sarda-Website.zip
+__pycache__/
+*.pyc
+.claude/

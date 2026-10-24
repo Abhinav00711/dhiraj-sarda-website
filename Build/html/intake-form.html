@@ -1,0 +1,97 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Client Intake & Consent Form</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@300;400;500;600&family=Noto+Serif+Devanagari:wght@500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet"><style>
+:root{--ink:#0E1233;--indigo:#1A1F4D;--gold:#C9A24B;--goldlt:#E6CB8A;--ivory:#F6EFDD;--mist:#B9BDDA;--golddk:#8a6a1f;--saffron:#E38B3A;--text:#2a2f55}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:'Jost','Noto Sans Devanagari',sans-serif;color:var(--ivory)}
+body.hi{font-family:'Noto Sans Devanagari','Jost',sans-serif}
+.serif{font-family:'Cormorant Garamond','Noto Serif Devanagari',serif}
+.hi .serif{font-family:'Noto Serif Devanagari','Cormorant Garamond',serif;letter-spacing:0!important}
+.tiro{font-family:'Tiro Devanagari Hindi','Noto Serif Devanagari',serif}
+.caps{text-transform:uppercase;letter-spacing:.26em}
+.hi .caps{letter-spacing:.03em!important;text-transform:none!important}
+.it{font-style:italic}.hi .it{font-style:normal}
+.rule{height:1px;background:var(--gold);position:relative;margin:0 auto}
+.rule:after{content:"";position:absolute;left:50%;top:-3px;width:7px;height:7px;background:var(--gold);transform:translateX(-50%) rotate(45deg)}
+.rule.l{margin-left:0}.rule.l:after{left:0;transform:rotate(45deg)}
+.dark{background:radial-gradient(ellipse at 50% 14%,#283080 0%,#151b55 36%,var(--ink) 78%);color:var(--ivory)}
+.light{background:var(--ivory) url('../art/bg-brochure.jpg') center/cover;color:var(--ink)}
+.stars{position:absolute;inset:0;pointer-events:none;opacity:.32;background-image:radial-gradient(rgba(230,203,138,.6) 1px,transparent 1.4px),radial-gradient(rgba(230,203,138,.35) 1px,transparent 1.4px),radial-gradient(rgba(255,255,255,.35) .8px,transparent 1.2px);background-size:90px 90px,53px 53px,137px 137px;background-position:0 0,27px 31px,61px 13px}
+.mand{position:absolute;pointer-events:none}
+.rel{position:relative}
+.kicker{display:flex;align-items:center;gap:10px;font-size:10.5px;color:var(--gold);font-weight:500}
+.dark .kicker{color:var(--goldlt)}
+.kicker:before,.kicker.c:after{content:"";width:26px;height:1px;background:currentColor;opacity:.7}
+.kicker.c{justify-content:center}
+.arch{border-radius:999px 999px 0 0;overflow:hidden;border:3px solid var(--gold);box-shadow:0 0 0 7px rgba(14,18,51,.92),0 0 0 8.5px var(--gold),0 22px 60px rgba(0,0,0,.45)}
+.arch img{width:100%;height:100%;object-fit:cover;object-position:50% 12%;display:block}
+.chk{list-style:none}
+.chk li{position:relative;padding-left:18px}
+.chk li:before{content:"";position:absolute;left:2px;top:.62em;width:6px;height:6px;background:var(--gold);transform:rotate(45deg)}
+.wa-pill{display:inline-flex;align-items:center;gap:12px;background:var(--ivory);color:var(--ink);border-radius:999px;border:2px solid var(--gold);text-decoration:none}
+.wa-pill .num{font-family:'Jost',sans-serif;font-weight:600;letter-spacing:.03em}
+.qr{background:var(--ivory);border-radius:10px;border:1.5px solid var(--gold)}
+.qr svg{display:block;width:100%;height:100%}
+
+@page{size:210mm 297mm;margin:0}
+body{color:var(--ink);background:#fff}
+.pg{width:210mm;height:297mm;position:relative;overflow:hidden;padding:11mm 16mm 16mm;break-after:page}
+.pg:last-child{break-after:auto}
+.hd{display:flex;align-items:center;gap:12px;border-bottom:1.5px solid var(--gold);padding-bottom:4mm}
+.hd img{width:13mm}
+.hd b{font-family:'Cormorant Garamond',serif;font-size:22px;letter-spacing:.14em;display:block;line-height:1}
+.hd span{font-size:8.5px;color:var(--golddk);letter-spacing:.18em}
+.hd .r{margin-left:auto;text-align:right;font-size:9.5px;color:#555;line-height:1.5}
+h1{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;margin-top:4mm;line-height:1.1}
+h1 small{display:block;font-family:'Noto Sans Devanagari',sans-serif;font-size:15px;font-weight:500;color:var(--golddk);margin-top:1mm}
+.intro{font-size:10px;color:#444;margin-top:2mm;line-height:1.5}
+h3{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--golddk);margin:5mm 0 2.5mm;display:flex;gap:10px;align-items:center}
+h3 span{letter-spacing:0;text-transform:none;font-family:'Noto Sans Devanagari';font-size:11.5px;color:var(--golddk)}
+h3:after{content:"";flex:1;height:1px;background:rgba(201,162,75,.6)}
+.f{display:grid;gap:3mm 6mm}
+.f2{grid-template-columns:1fr 1fr}.f3{grid-template-columns:2fr 1fr 1fr}
+.fld{font-size:9.6px;color:#333}
+.fld i{font-style:normal;color:#8a6a1f;font-family:'Noto Sans Devanagari';font-size:9.2px}
+.fld .ln{border-bottom:1px solid #9aa0c0;height:5.6mm}
+.box{border:1px solid #9aa0c0;border-radius:4px;height:18mm;margin-top:1.5mm}
+.qs{font-size:9.6px;line-height:1.5}
+.qs .q{display:grid;grid-template-columns:1fr 26mm;gap:4mm;padding:.75mm 0;border-bottom:1px dotted #c8cbe0}
+.qs .q i{font-style:normal;color:#8a6a1f;font-family:'Noto Sans Devanagari';font-size:9.2px;display:block}
+.yn{display:flex;gap:4mm;align-items:center;justify-content:flex-end;font-size:9.4px}
+.yn span:before{content:"";display:inline-block;width:3.2mm;height:3.2mm;border:1px solid #6a6f95;border-radius:1px;margin-right:1.5mm;vertical-align:-.6mm}
+.cons{font-size:9.6px;line-height:1.55}
+.cons li{display:grid;grid-template-columns:5mm 1fr;padding:1.4mm 0;border-bottom:1px dotted #e0e2ee;list-style:none}
+.cons li:before{content:"";width:3.2mm;height:3.2mm;border:1px solid #6a6f95;border-radius:1px;margin-top:.6mm}
+.cons i{font-style:normal;color:#5a5f85;font-family:'Noto Sans Devanagari';font-size:9.2px;display:block}
+.sig{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:6mm;margin-top:6mm}
+.ft{position:absolute;left:16mm;right:16mm;bottom:8mm;border-top:1px solid rgba(201,162,75,.6);padding-top:2.5mm;font-size:8.4px;color:#666;display:flex;justify-content:space-between}
+.conf{font-size:9px;color:#555;background:#faf6ea;border-left:3px solid var(--gold);padding:2.5mm 4mm;margin-top:4mm;line-height:1.5}
+</style></head><body class="en ">
+<section class="pg"><div class="hd"><img src="../brand/mark-ink.svg" alt=""><div><b>DHIRAJ SARDA</b><span>PAST LIFE REGRESSION THERAPIST · HYPNOTHERAPIST</span></div><div class="r">+91 93501 55044<br>dhirajsarda79@gmail.com<br>Delhi · Online</div></div>
+<h1>Client Intake &amp; Consent Form<small>क्लाइंट विवरण एवं सहमति पत्र</small></h1>
+<div class="intro">Please complete this form before your first session. Everything you share is kept strictly confidential. &nbsp;<span style="font-family:'Noto Sans Devanagari'">कृपया पहले सत्र से पहले यह फ़ॉर्म भरें। आपकी हर जानकारी पूर्णतः गोपनीय रखी जाएगी।</span></div>
+<h3>Your details <span>आपका विवरण</span></h3>
+<div class="f f3"><div class="fld ">Full name <i>/ पूरा नाम</i><div class="ln"></div></div><div class="fld ">Date of birth <i>/ जन्म तिथि</i><div class="ln"></div></div><div class="fld ">Gender <i>/ लिंग</i><div class="ln"></div></div></div>
+<div class="f f2" style="margin-top:3mm"><div class="fld ">Phone / WhatsApp <i>/ फ़ोन / WhatsApp</i><div class="ln"></div></div><div class="fld ">Email <i>/ ईमेल</i><div class="ln"></div></div></div>
+<div class="f f2" style="margin-top:3mm"><div class="fld ">City <i>/ शहर</i><div class="ln"></div></div><div class="fld ">Occupation <i>/ व्यवसाय</i><div class="ln"></div></div></div>
+<div class="f f2" style="margin-top:3mm"><div class="fld ">Emergency contact (name &amp; phone) <i>/ आपातकालीन संपर्क</i><div class="ln"></div></div><div class="fld ">Session mode: Online / In person <i>/ सत्र: ऑनलाइन / आमने-सामने</i><div class="ln"></div></div></div>
+<h3>What brings you here <span>आप क्यों आए हैं</span></h3>
+<div class="fld">What would you like support with? <i>/ आप किस विषय में सहयोग चाहते हैं?</i><div class="box"></div></div>
+<div class="fld" style="margin-top:3mm">How long has this been affecting you, and what have you tried so far? <i>/ यह कब से है, और अब तक क्या प्रयास किए?</i><div class="box" style="height:14mm"></div></div>
+<h3>Health check <span>स्वास्थ्य जानकारी</span></h3>
+<div class="qs"><div class="q"><div>Are you currently under a doctor's care for any condition?<i>क्या आप किसी रोग के लिए वर्तमान में डॉक्टर के उपचार में हैं?</i></div><div class="yn"><span>Yes</span><span>No</span></div></div><div class="q"><div>Are you taking any regular medicines?<i>क्या आप नियमित रूप से कोई दवा ले रहे हैं?</i></div><div class="yn"><span>Yes</span><span>No</span></div></div><div class="q"><div>Have you ever been diagnosed with epilepsy or seizures?<i>क्या आपको कभी मिर्गी या दौरे की समस्या बताई गई है?</i></div><div class="yn"><span>Yes</span><span>No</span></div></div><div class="q"><div>Have you ever been diagnosed with psychosis, schizophrenia or bipolar disorder?<i>क्या आपको कभी साइकोसिस, स्किज़ोफ्रेनिया या बाइपोलर डिसऑर्डर बताया गया है?</i></div><div class="yn"><span>Yes</span><span>No</span></div></div><div class="q"><div>Do you have a heart condition, or very high/low blood pressure?<i>क्या आपको हृदय रोग या बहुत अधिक/कम रक्तचाप है?</i></div><div class="yn"><span>Yes</span><span>No</span></div></div><div class="q"><div>Do you have diabetes (sugar)? If yes, it is managed by: ________<i>क्या आपको डायबिटीज़ (शुगर) है? यदि हाँ, उपचार किसके द्वारा: ________</i></div><div class="yn"><span>Yes</span><span>No</span></div></div><div class="q"><div>Are you pregnant?<i>क्या आप गर्भवती हैं?</i></div><div class="yn"><span>Yes</span><span>No</span></div></div><div class="q"><div>Are you currently receiving counselling or psychiatric care?<i>क्या आप वर्तमान में काउंसलिंग या मनोचिकित्सा उपचार ले रहे हैं?</i></div><div class="yn"><span>Yes</span><span>No</span></div></div><div class="q"><div>Have you had thoughts of harming yourself recently?<i>क्या हाल में आपके मन में स्वयं को नुकसान पहुँचाने के विचार आए हैं?</i></div><div class="yn"><span>Yes</span><span>No</span></div></div><div class="q"><div>Have you consumed alcohol or any intoxicant in the last 24 hours?<i>क्या पिछले 24 घंटों में आपने शराब या कोई नशीला पदार्थ लिया है?</i></div><div class="yn"><span>Yes</span><span>No</span></div></div></div>
+<div class="ft"><span>Confidential client record · गोपनीय</span><span>Page 1 / 2</span></div></section>
+
+<section class="pg"><div class="hd"><img src="../brand/mark-ink.svg" alt=""><div><b>DHIRAJ SARDA</b><span>PAST LIFE REGRESSION THERAPIST · HYPNOTHERAPIST</span></div><div class="r">+91 93501 55044<br>dhirajsarda79@gmail.com<br>Delhi · Online</div></div>
+<div class="fld" style="margin-top:5mm">What would a good outcome look like for you? <i>/ आपके लिए अच्छा परिणाम क्या होगा?</i><div class="box" style="height:16mm"></div></div>
+<div class="fld" style="margin-top:4mm">If you answered “Yes” to any health question, please give details (condition, doctor, medicines): <i>/ यदि किसी प्रश्न का उत्तर “हाँ” है, तो विवरण दें:</i><div class="box" style="height:18mm"></div></div>
+<div class="conf"><b>Please note:</b> If you are under psychiatric care, or have epilepsy, psychosis or a serious heart condition, sessions may need your doctor’s approval first. This is for your safety. &nbsp;<span style="font-family:'Noto Sans Devanagari'">यदि आप मनोचिकित्सा उपचार में हैं, या आपको मिर्गी, साइकोसिस या गंभीर हृदय रोग है, तो पहले डॉक्टर की अनुमति आवश्यक हो सकती है। यह आपकी सुरक्षा के लिए है।</span></div>
+<h3>Consent <span>सहमति</span></h3>
+<ul class="cons"><li><div>I understand that Past Life Regression and Hypnotherapy are complementary practices and not a substitute for medical or psychiatric treatment.<i>मैं समझता/समझती हूँ कि ये पूरक पद्धतियाँ हैं, चिकित्सा या मनोचिकित्सा उपचार का विकल्प नहीं।</i></div></li><li><div>I will continue any treatment and medicines prescribed by my doctor, and will not stop them because of these sessions.<i>मैं डॉक्टर द्वारा दी गई दवाइयाँ और उपचार जारी रखूँगा/रखूँगी, और इन सत्रों के कारण उन्हें बंद नहीं करूँगा/करूँगी।</i></div></li><li><div>I understand that no specific result or cure is promised or guaranteed, and experiences differ from person to person.<i>मैं समझता/समझती हूँ कि किसी विशेष परिणाम या इलाज का वादा या गारंटी नहीं है, और अनुभव व्यक्ति-व्यक्ति में अलग होते हैं।</i></div></li><li><div>I understand that imagery from regression may be experienced as memory, symbol or imagination, and its meaning is mine to interpret.<i>मैं समझता/समझती हूँ कि रिग्रेशन के दृश्य स्मृति, प्रतीक या कल्पना हो सकते हैं, और उनका अर्थ मैं स्वयं समझूँगा/समझूँगी।</i></div></li><li><div>I remain aware and in control, and may stop the session at any time.<i>मैं जागरूक और नियंत्रण में रहूँगा/रहूँगी, और कभी भी सत्र रोक सकता/सकती हूँ।</i></div></li><li><div>I have answered the health questions honestly and will inform the therapist of any changes.<i>मैंने स्वास्थ्य संबंधी प्रश्नों के उत्तर ईमानदारी से दिए हैं और किसी भी बदलाव की सूचना दूँगा/दूँगी।</i></div></li><li><div>I consent to online sessions being held privately; sessions are not recorded without my written permission.<i>मैं ऑनलाइन सत्रों के लिए सहमत हूँ; मेरी लिखित अनुमति के बिना सत्र रिकॉर्ड नहीं किए जाएँगे।</i></div></li></ul>
+<h3>Confidentiality <span>गोपनीयता</span></h3>
+<div class="intro" style="font-size:9.6px">Everything shared in sessions is kept confidential. The only exception is if there is a serious risk of harm to you or someone else, when appropriate help may need to be contacted. <span style="font-family:'Noto Sans Devanagari'">सत्र में साझा की गई हर बात गोपनीय रहती है। केवल तब अपवाद होगा जब आपको या किसी अन्य को गंभीर हानि का खतरा हो।</span></div>
+<div class="sig"><div class="fld ">Client signature <i>/ हस्ताक्षर</i><div class="ln"></div></div><div class="fld ">Name <i>/ नाम</i><div class="ln"></div></div><div class="fld ">Date <i>/ दिनांक</i><div class="ln"></div></div></div>
+<div class="sig" style="margin-top:6mm"><div class="fld ">Therapist: Dhiraj Sarda <i>/ थेरेपिस्ट</i><div class="ln"></div></div><div class="fld ">Signature <i>/ हस्ताक्षर</i><div class="ln"></div></div><div class="fld ">Date <i>/ दिनांक</i><div class="ln"></div></div></div>
+<h3 style="margin-top:6mm">For therapist use <span>केवल थेरेपिस्ट हेतु</span></h3>
+<div class="f f3"><div class="fld ">Session no. <i>/ सत्र क्र.</i><div class="ln"></div></div><div class="fld ">Technique used <i>/ तकनीक</i><div class="ln"></div></div><div class="fld ">Follow-up <i>/ अगला सत्र</i><div class="ln"></div></div></div>
+<div class="fld" style="margin-top:3mm">Notes <i>/ टिप्पणी</i><div class="box" style="height:13mm"></div></div>
+<div class="ft"><span>Confidential client record · गोपनीय</span><span>Page 2 / 2</span></div></section></body></html>

@@ -1,0 +1,43 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Card mockup</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@300;400;500;600&family=Noto+Serif+Devanagari:wght@500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet"><style>
+:root{--ink:#0E1233;--indigo:#1A1F4D;--gold:#C9A24B;--goldlt:#E6CB8A;--ivory:#F6EFDD;--mist:#B9BDDA;--golddk:#8a6a1f;--saffron:#E38B3A;--text:#2a2f55}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:'Jost','Noto Sans Devanagari',sans-serif;color:var(--ivory)}
+body.hi{font-family:'Noto Sans Devanagari','Jost',sans-serif}
+.serif{font-family:'Cormorant Garamond','Noto Serif Devanagari',serif}
+.hi .serif{font-family:'Noto Serif Devanagari','Cormorant Garamond',serif;letter-spacing:0!important}
+.tiro{font-family:'Tiro Devanagari Hindi','Noto Serif Devanagari',serif}
+.caps{text-transform:uppercase;letter-spacing:.26em}
+.hi .caps{letter-spacing:.03em!important;text-transform:none!important}
+.it{font-style:italic}.hi .it{font-style:normal}
+.rule{height:1px;background:var(--gold);position:relative;margin:0 auto}
+.rule:after{content:"";position:absolute;left:50%;top:-3px;width:7px;height:7px;background:var(--gold);transform:translateX(-50%) rotate(45deg)}
+.rule.l{margin-left:0}.rule.l:after{left:0;transform:rotate(45deg)}
+.dark{background:radial-gradient(ellipse at 50% 14%,#283080 0%,#151b55 36%,var(--ink) 78%);color:var(--ivory)}
+.light{background:var(--ivory) url('../art/bg-brochure.jpg') center/cover;color:var(--ink)}
+.stars{position:absolute;inset:0;pointer-events:none;opacity:.32;background-image:radial-gradient(rgba(230,203,138,.6) 1px,transparent 1.4px),radial-gradient(rgba(230,203,138,.35) 1px,transparent 1.4px),radial-gradient(rgba(255,255,255,.35) .8px,transparent 1.2px);background-size:90px 90px,53px 53px,137px 137px;background-position:0 0,27px 31px,61px 13px}
+.mand{position:absolute;pointer-events:none}
+.rel{position:relative}
+.kicker{display:flex;align-items:center;gap:10px;font-size:10.5px;color:var(--gold);font-weight:500}
+.dark .kicker{color:var(--goldlt)}
+.kicker:before,.kicker.c:after{content:"";width:26px;height:1px;background:currentColor;opacity:.7}
+.kicker.c{justify-content:center}
+.arch{border-radius:999px 999px 0 0;overflow:hidden;border:3px solid var(--gold);box-shadow:0 0 0 7px rgba(14,18,51,.92),0 0 0 8.5px var(--gold),0 22px 60px rgba(0,0,0,.45)}
+.arch img{width:100%;height:100%;object-fit:cover;object-position:50% 12%;display:block}
+.chk{list-style:none}
+.chk li{position:relative;padding-left:18px}
+.chk li:before{content:"";position:absolute;left:2px;top:.62em;width:6px;height:6px;background:var(--gold);transform:rotate(45deg)}
+.wa-pill{display:inline-flex;align-items:center;gap:12px;background:var(--ivory);color:var(--ink);border-radius:999px;border:2px solid var(--gold);text-decoration:none}
+.wa-pill .num{font-family:'Jost',sans-serif;font-weight:600;letter-spacing:.03em}
+.qr{background:var(--ivory);border-radius:10px;border:1.5px solid var(--gold)}
+.qr svg{display:block;width:100%;height:100%}
+body{width:1600px;height:1100px;overflow:hidden;background:radial-gradient(ellipse at 40% 30%,#2b3380 0%,#141a52 45%,#0a0d28 100%)}
+.c{position:absolute;width:712px;height:408px;overflow:hidden;border-radius:6px;box-shadow:0 40px 80px rgba(0,0,0,.55),0 8px 18px rgba(0,0,0,.35)}
+.c img{position:absolute;width:760px;height:456px;left:-24px;top:-24px}
+.a{left:150px;top:150px;transform:rotate(-7deg)}
+.b{left:760px;top:520px;transform:rotate(5deg)}
+.cap{position:absolute;left:150px;bottom:70px;color:#E6CB8A;font:500 15px Jost;letter-spacing:.3em;text-transform:uppercase;opacity:.8}
+.mand{width:900px;right:-250px;top:-300px;opacity:.07}</style></head><body class="en "><div class="stars"></div><img class="mand" src="../brand/mandala.svg" alt="">
+<div class="c a"><img src="../out/3-Visiting-Card/Dhiraj-Sarda-Card-EN-print-p1.png"></div>
+<div class="c b"><img src="../out/3-Visiting-Card/Dhiraj-Sarda-Card-EN-print-p2.png"></div>
+<div class="cap">Visiting card &nbsp;·&nbsp; 89 × 51 mm</div></body></html>

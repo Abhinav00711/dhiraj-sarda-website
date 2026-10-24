@@ -1,0 +1,81 @@
+<!doctype html><html lang="hi"><head><meta charset="utf-8"><title>Dhiraj Sarda - Card (HI)</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@300;400;500;600&family=Noto+Serif+Devanagari:wght@500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet"><style>
+:root{--ink:#0E1233;--indigo:#1A1F4D;--gold:#C9A24B;--goldlt:#E6CB8A;--ivory:#F6EFDD;--mist:#B9BDDA;--golddk:#8a6a1f;--saffron:#E38B3A;--text:#2a2f55}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:'Jost','Noto Sans Devanagari',sans-serif;color:var(--ivory)}
+body.hi{font-family:'Noto Sans Devanagari','Jost',sans-serif}
+.serif{font-family:'Cormorant Garamond','Noto Serif Devanagari',serif}
+.hi .serif{font-family:'Noto Serif Devanagari','Cormorant Garamond',serif;letter-spacing:0!important}
+.tiro{font-family:'Tiro Devanagari Hindi','Noto Serif Devanagari',serif}
+.caps{text-transform:uppercase;letter-spacing:.26em}
+.hi .caps{letter-spacing:.03em!important;text-transform:none!important}
+.it{font-style:italic}.hi .it{font-style:normal}
+.rule{height:1px;background:var(--gold);position:relative;margin:0 auto}
+.rule:after{content:"";position:absolute;left:50%;top:-3px;width:7px;height:7px;background:var(--gold);transform:translateX(-50%) rotate(45deg)}
+.rule.l{margin-left:0}.rule.l:after{left:0;transform:rotate(45deg)}
+.dark{background:radial-gradient(ellipse at 50% 14%,#283080 0%,#151b55 36%,var(--ink) 78%);color:var(--ivory)}
+.light{background:var(--ivory) url('../art/bg-brochure.jpg') center/cover;color:var(--ink)}
+.stars{position:absolute;inset:0;pointer-events:none;opacity:.32;background-image:radial-gradient(rgba(230,203,138,.6) 1px,transparent 1.4px),radial-gradient(rgba(230,203,138,.35) 1px,transparent 1.4px),radial-gradient(rgba(255,255,255,.35) .8px,transparent 1.2px);background-size:90px 90px,53px 53px,137px 137px;background-position:0 0,27px 31px,61px 13px}
+.mand{position:absolute;pointer-events:none}
+.rel{position:relative}
+.kicker{display:flex;align-items:center;gap:10px;font-size:10.5px;color:var(--gold);font-weight:500}
+.dark .kicker{color:var(--goldlt)}
+.kicker:before,.kicker.c:after{content:"";width:26px;height:1px;background:currentColor;opacity:.7}
+.kicker.c{justify-content:center}
+.arch{border-radius:999px 999px 0 0;overflow:hidden;border:3px solid var(--gold);box-shadow:0 0 0 7px rgba(14,18,51,.92),0 0 0 8.5px var(--gold),0 22px 60px rgba(0,0,0,.45)}
+.arch img{width:100%;height:100%;object-fit:cover;object-position:50% 12%;display:block}
+.chk{list-style:none}
+.chk li{position:relative;padding-left:18px}
+.chk li:before{content:"";position:absolute;left:2px;top:.62em;width:6px;height:6px;background:var(--gold);transform:rotate(45deg)}
+.wa-pill{display:inline-flex;align-items:center;gap:12px;background:var(--ivory);color:var(--ink);border-radius:999px;border:2px solid var(--gold);text-decoration:none}
+.wa-pill .num{font-family:'Jost',sans-serif;font-weight:600;letter-spacing:.03em}
+.qr{background:var(--ivory);border-radius:10px;border:1.5px solid var(--gold)}
+.qr svg{display:block;width:100%;height:100%}
+
+@page{size:95mm 57mm;margin:0}
+html{background:#0E1233}
+.cd{width:95mm;height:57.15mm;position:relative;overflow:hidden;break-after:page}
+.cd:last-child{break-after:auto}
+.safe{position:absolute;left:8mm;right:8mm;top:8mm;bottom:8mm}
+.fr .mand{width:120mm;left:50%;top:50%;margin:-60mm 0 0 -60mm;opacity:.13}
+.fr .safe{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.fr .devo{font-size:7px;color:var(--goldlt);opacity:.85}
+.fr .mk{width:11mm;margin-top:1.6mm}
+.fr h1{font-size:19px;font-weight:600;letter-spacing:.16em;margin-top:2.6mm;line-height:1}
+.hi .fr h1{font-size:21px;letter-spacing:0;line-height:1.3;margin-top:1.6mm}
+.fr .rule{width:26mm;margin:2.4mm auto 2.2mm}
+.fr .rule:after{width:5px;height:5px;top:-2px}
+.fr .ttl{font-size:6.3px;color:var(--goldlt);line-height:1.85;letter-spacing:.2em}
+.hi .fr .ttl{font-size:8px;line-height:1.6}
+.frame{position:absolute;inset:5.2mm;border:.6px solid rgba(201,162,75,.6);border-radius:2px;pointer-events:none}
+.bkc{color:var(--ink)}
+.bkc .safe{display:grid;grid-template-columns:1fr 20mm;gap:4mm}
+.bkc h2{font-size:15px;font-weight:600;letter-spacing:.08em;line-height:1.05}
+.hi .bkc h2{font-size:16px;letter-spacing:0;line-height:1.3}
+.bkc .t{font-size:6.6px;color:var(--golddk);line-height:1.5;margin-top:1mm;font-weight:500}
+.hi .bkc .t{font-size:7.6px}
+.bkc .rule{width:14mm;margin:2mm 0 2mm}
+.bkc .rule:after{width:4px;height:4px;top:-1.5px;left:0;transform:rotate(45deg)}
+.bkc ul{font-size:6.8px;line-height:1.6;color:var(--text)}
+.hi .bkc ul{font-size:7.6px;line-height:1.55}
+.bkc .chk li{padding-left:8px}.bkc .chk li:before{width:3.2px;height:3.2px;top:.6em;left:0}
+.bkc .ph{position:absolute;left:0;bottom:6.6mm;display:flex;align-items:center;gap:4px;font-family:'Jost',sans-serif;font-weight:600;font-size:11.5px;letter-spacing:.02em}
+.bkc .eml{position:absolute;left:0;bottom:3.3mm;font-size:7.2px;color:var(--ink);letter-spacing:.02em;font-weight:500}
+.bkc .loc{position:absolute;left:0;bottom:0;font-size:5.6px;color:var(--golddk);letter-spacing:.14em}
+.hi .bkc .loc{font-size:6.8px;letter-spacing:0;bottom:-.4mm}
+.bkc .qr{width:20mm;height:20mm;padding:1.4mm;border-radius:4px;border-width:.8px;background:#fff}
+.bkc .scan{font-size:4.8px;color:var(--golddk);text-align:center;margin-top:1mm;line-height:1.3}
+.hi .bkc .scan{font-size:5.6px}
+.bkc .mk{width:7mm;display:block;margin:2.4mm auto 0;opacity:.95}
+.bkc .band{position:absolute;left:0;right:0;bottom:0;height:4.6mm;background:var(--ink)}
+.bkc .band:before{content:"";position:absolute;left:0;right:0;top:0;height:.6px;background:var(--gold)}
+</style></head><body class="hi ">
+<section class="cd dark fr"><div class="stars"></div><img class="mand" src="../brand/mandala.svg" alt=""><div class="frame"></div>
+  <div class="safe"><div class="devo tiro">॥ श्री हनुमते नमः ॥</div><img class="mk" src="../brand/mark.svg" alt="">
+  <h1 class="serif">धीरज सारड़ा</h1><div class="rule"></div><div class="ttl caps">पास्ट लाइफ रिग्रेशन थेरेपिस्ट<br>एवं ट्रांसपर्सनल हिप्नोथेरेपिस्ट</div></div></section>
+<section class="cd light bkc"><div class="band"></div>
+  <div class="safe"><div style="position:relative">
+    <h2 class="serif">धीरज सारड़ा</h2><div class="t">पास्ट लाइफ रिग्रेशन थेरेपिस्ट एवं ट्रांसपर्सनल हिप्नोथेरेपिस्ट</div><div class="rule"></div>
+    <ul class="chk"><li>पास्ट लाइफ रिग्रेशन</li><li>ट्रांसपर्सनल हिप्नोथेरेपी</li><li>इनर चाइल्ड हीलिंग</li><li>एज एवं वॉम्ब रिग्रेशन</li></ul>
+    <div class="ph"><svg viewBox="0 0 24 24" width="12" height="12"><path fill="#25D366" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>+91 93501 55044</div><div class="eml">dhirajsarda79@gmail.com</div><div class="loc caps">दिल्ली एवं ऑनलाइन &nbsp;·&nbsp; प्रमाणित थेरेपिस्ट</div></div>
+    <div><div class="qr"><svg viewBox="0 0 41 41" class="segno"><path class="qrline" stroke="#0e1233" d="M0 0.5h7m3 0h1m2 0h5m1 0h1m3 0h1m4 0h1m2 0h1m2 0h7m-41 1h1m5 0h1m2 0h1m1 0h2m2 0h3m3 0h1m2 0h1m2 0h1m1 0h2m3 0h1m5 0h1m-41 1h1m1 0h3m1 0h1m1 0h1m2 0h2m1 0h2m1 0h3m1 0h2m4 0h2m1 0h2m2 0h1m1 0h3m1 0h1m-41 1h1m1 0h3m1 0h1m1 0h2m1 0h1m1 0h2m5 0h1m1 0h2m1 0h2m1 0h3m3 0h1m1 0h3m1 0h1m-41 1h1m1 0h3m1 0h1m1 0h2m1 0h2m3 0h1m1 0h2m1 0h1m1 0h1m1 0h2m4 0h2m1 0h1m1 0h3m1 0h1m-41 1h1m5 0h1m1 0h1m1 0h1m1 0h1m2 0h1m2 0h1m2 0h2m2 0h5m2 0h1m1 0h1m5 0h1m-41 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-33 1h1m1 0h1m3 0h1m3 0h2m1 0h2m1 0h1m1 0h3m3 0h1m-33 1h1m1 0h5m2 0h1m2 0h3m2 0h2m1 0h1m2 0h1m1 0h1m1 0h1m1 0h1m1 0h2m1 0h5m-38 1h1m6 0h1m7 0h1m2 0h1m1 0h4m1 0h1m3 0h3m1 0h1m1 0h1m1 0h1m1 0h1m-41 1h1m1 0h3m1 0h3m2 0h1m3 0h1m2 0h1m1 0h1m4 0h1m1 0h2m1 0h1m1 0h1m1 0h1m4 0h1m-37 1h2m2 0h1m1 0h1m1 0h1m4 0h1m1 0h1m1 0h2m1 0h2m2 0h2m2 0h2m1 0h1m1 0h2m-36 1h3m1 0h2m4 0h2m2 0h2m4 0h1m1 0h2m1 0h3m1 0h2m2 0h1m1 0h2m-39 1h4m1 0h1m2 0h1m2 0h3m1 0h1m2 0h1m4 0h1m2 0h1m4 0h1m1 0h2m1 0h2m2 0h1m-40 1h6m2 0h1m2 0h1m1 0h1m1 0h1m1 0h1m2 0h1m4 0h2m2 0h1m1 0h2m2 0h1m2 0h1m-39 1h1m3 0h1m1 0h2m3 0h1m1 0h2m2 0h1m2 0h4m5 0h1m1 0h1m1 0h4m-38 1h2m1 0h1m2 0h1m2 0h3m1 0h1m1 0h1m1 0h1m2 0h1m1 0h1m1 0h2m1 0h1m1 0h1m2 0h2m1 0h1m2 0h1m-38 1h4m2 0h2m1 0h2m1 0h1m2 0h1m2 0h1m3 0h1m4 0h1m2 0h1m2 0h3m3 0h1m-40 1h2m1 0h1m1 0h2m1 0h1m4 0h1m3 0h1m1 0h1m1 0h1m1 0h2m1 0h2m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m-38 1h2m4 0h2m1 0h2m1 0h2m5 0h3m1 0h1m1 0h3m1 0h1m1 0h1m3 0h2m2 0h1m-41 1h2m1 0h1m2 0h2m1 0h2m2 0h1m4 0h1m1 0h1m1 0h1m1 0h4m1 0h1m10 0h1m-41 1h2m1 0h1m3 0h2m3 0h3m4 0h1m1 0h1m1 0h1m1 0h1m4 0h4m1 0h2m2 0h2m-41 1h1m1 0h1m3 0h1m2 0h2m1 0h4m4 0h2m2 0h1m2 0h2m1 0h1m1 0h2m4 0h1m-39 1h1m1 0h1m4 0h1m1 0h1m1 0h6m1 0h1m1 0h2m2 0h1m1 0h3m4 0h1m2 0h1m2 0h2m-39 1h1m3 0h1m3 0h1m3 0h1m2 0h2m1 0h1m2 0h1m1 0h1m1 0h1m1 0h2m4 0h1m1 0h2m-37 1h3m3 0h1m1 0h1m1 0h2m2 0h2m1 0h1m1 0h4m1 0h1m1 0h1m1 0h2m1 0h1m2 0h2m1 0h2m-41 1h1m2 0h1m1 0h2m2 0h3m1 0h6m1 0h2m5 0h4m1 0h1m1 0h3m2 0h1m-37 1h3m2 0h2m5 0h2m1 0h1m1 0h3m1 0h1m2 0h2m2 0h2m1 0h4m2 0h1m-40 1h6m4 0h1m3 0h3m4 0h2m2 0h1m1 0h2m1 0h1m3 0h1m1 0h2m1 0h1m-41 1h1m1 0h1m2 0h1m1 0h1m1 0h1m1 0h1m4 0h1m1 0h1m4 0h1m7 0h1m1 0h5m1 0h2m-41 1h1m3 0h1m1 0h3m3 0h1m3 0h1m9 0h4m2 0h3m1 0h2m1 0h1m-40 1h1m1 0h1m1 0h1m2 0h2m1 0h1m1 0h3m1 0h1m1 0h7m1 0h3m2 0h1m1 0h2m2 0h1m-38 1h1m4 0h2m1 0h4m1 0h1m1 0h3m1 0h1m2 0h1m2 0h1m1 0h3m1 0h10m-33 1h1m3 0h2m3 0h3m3 0h2m1 0h1m1 0h1m1 0h1m1 0h1m3 0h1m3 0h1m-41 1h7m2 0h1m2 0h1m4 0h1m2 0h1m1 0h1m1 0h1m1 0h3m1 0h3m1 0h1m1 0h4m-40 1h1m5 0h1m1 0h1m2 0h3m3 0h2m1 0h2m1 0h2m1 0h1m1 0h1m3 0h1m3 0h1m2 0h1m-40 1h1m1 0h3m1 0h1m1 0h2m2 0h1m1 0h1m1 0h1m7 0h3m2 0h2m1 0h5m1 0h1m-39 1h1m1 0h3m1 0h1m1 0h3m2 0h1m1 0h1m1 0h3m1 0h1m1 0h1m2 0h1m1 0h4m1 0h1m1 0h1m3 0h2m-41 1h1m1 0h3m1 0h1m1 0h1m3 0h1m3 0h3m2 0h1m2 0h1m2 0h1m1 0h1m2 0h5m-37 1h1m5 0h1m2 0h2m5 0h1m1 0h2m1 0h2m3 0h3m1 0h1m1 0h1m1 0h1m1 0h2m1 0h1m-40 1h7m1 0h1m1 0h4m2 0h5m4 0h1m1 0h1m1 0h1m1 0h1m1 0h4m1 0h1"/></svg></div><div class="scan">WhatsApp पर संदेश के लिए स्कैन करें</div><img class="mk" src="../brand/mark-ink.svg" alt=""></div></div></section></body></html>
