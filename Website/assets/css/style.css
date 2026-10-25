@@ -307,7 +307,8 @@ body.hi .fq summary{font-size:19px}
 .or{margin:30px 0 14px;color:var(--goldlt);font-size:14px;letter-spacing:.1em}
 .wa-big{display:inline-flex;align-items:center;gap:12px;white-space:nowrap;background:var(--ivory);color:var(--ink);text-decoration:none;font-weight:600;font-size:clamp(19px,5.4vw,28px);letter-spacing:.02em;padding:12px 24px 12px 16px;border-radius:999px;border:2px solid var(--gold);transition:transform .4s var(--ease),box-shadow .4s}
 .wa-big:hover{transform:translateY(-3px);box-shadow:0 14px 40px rgba(201,162,75,.35)}
-.mail{display:block;margin-top:16px;color:var(--goldlt);font-size:16px;letter-spacing:.03em;text-decoration:none;word-break:break-all}
+.btn svg,.wa-big svg{flex:none}
+.mail{display:block;margin-top:16px;color:var(--goldlt);font-size:16px;letter-spacing:.03em;text-decoration:none;overflow-wrap:anywhere}
 .mail:hover{text-decoration:underline}
 .direct .loc{color:var(--ivory);margin-top:22px;font-size:11.5px}
 
@@ -322,7 +323,7 @@ body.hi .f-name{letter-spacing:0}
 .copy{margin-top:22px;font-size:13px;color:var(--mist)}
 
 /* ---------- floating whatsapp + lightbox ---------- */
-.fab{position:fixed;right:22px;bottom:22px;z-index:90;width:62px;height:62px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 12px 30px rgba(0,0,0,.35);transition:transform .4s var(--ease);opacity:0;transform:scale(.6);pointer-events:none}
+.fab{position:fixed;right:calc(22px + env(safe-area-inset-right));bottom:calc(22px + env(safe-area-inset-bottom));z-index:90;width:62px;height:62px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 12px 30px rgba(0,0,0,.35);transition:transform .4s var(--ease);opacity:0;transform:scale(.6);pointer-events:none}
 .fab.show{opacity:1;transform:none;pointer-events:auto}
 .fab:before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #25D366;animation:ripple 2.4s ease-out infinite}
 .fab:hover{transform:scale(1.08)}
@@ -351,8 +352,9 @@ body.hi .f-name{letter-spacing:0}
 @media (max-width:1080px){
   .links{display:none}
   .burger{display:block}
-  .nav.open .links{display:flex;position:fixed;top:64px;left:12px;right:12px;flex-direction:column;gap:0;background:rgba(14,18,51,.97);border:1px solid rgba(201,162,75,.4);border-radius:18px;padding:12px 22px;backdrop-filter:blur(14px)}
+  .nav.open .links{display:flex;position:fixed;top:64px;left:12px;right:12px;flex-direction:column;gap:0;background:var(--ink);box-shadow:0 30px 60px rgba(0,0,0,.45);border:1px solid rgba(201,162,75,.4);border-radius:18px;padding:12px 22px;backdrop-filter:blur(14px)}
   .nav.open .links a{padding:14px 0;border-bottom:1px solid rgba(201,162,75,.2);font-size:17px}
+  .nav.open .links a:last-child{border-bottom:0}
   .cards{grid-template-columns:1fr 1fr}
 }
 @media (max-width:860px){
@@ -386,6 +388,86 @@ body.hi .f-name{letter-spacing:0}
   .step-n{grid-row:span 2;margin:0}
   .form{grid-template-columns:1fr}
   .scroll{display:none}
+  .breathe{padding:96px 0}
+}
+@media (max-width:560px){
+  section,.breathe{padding:72px 0}
+  .wrap,.hero-in{width:calc(100% - 40px)}
+  .head.c{margin-bottom:40px}
+  /* nav: drop the subtitle and make the sound toggle a round icon button like the language one */
+  .nav{padding:12px max(16px,env(safe-area-inset-right)) 12px max(16px,env(safe-area-inset-left))}
+  .brand{gap:10px}
+  .brand img{width:34px;height:34px}
+  .brand small{display:none}
+  .snd{width:38px;height:38px;padding:0;justify-content:center}
+  .lang{width:44px;height:38px}
+  .bars i:nth-child(1){height:6px}.bars i:nth-child(2){height:11px}.bars i:nth-child(3){height:8px}.bars i:nth-child(4){height:4px}
+  .nav.open .links{top:62px}
+  /* hero */
+  .hero{padding:88px 0 64px}
+  .hero-in{gap:28px}
+  .hero-art{width:min(280px,72vw)}
+  .devo{margin-bottom:12px}
+  .hero-cta{flex-direction:column;align-items:center;margin-top:30px}
+  .hero-cta .btn{width:100%;max-width:300px;justify-content:center}
+  .hero .loc{margin-top:22px}
+  .mq-track span{font-size:20px}
+  /* about */
+  .light{background-size:520px;background-position:right -220px top -160px}
+  .meet{margin-top:56px;padding:30px 22px;border-radius:20px}
+  .meet h3{font-size:30px}
+  .quote{margin-top:60px}
+  .pils{margin-top:36px}
+  /* therapies */
+  .card{padding:30px 24px 28px}
+  .card-ic{width:64px;height:64px;margin-bottom:18px}
+  .card h3{font-size:26px}
+  .fmts{margin-top:40px}
+  .fmts div{padding:20px 12px}
+  /* healing */
+  .wheel{width:92%}
+  .wp h3{font-size:38px}
+  .wp ul{font-size:17px}
+  .note{flex-direction:column;align-items:flex-start;gap:12px;margin-top:40px;padding:22px 22px 22px 20px}
+  .areas-cta{margin-top:40px}
+  /* breathe */
+  .br-ctl{gap:18px;margin-top:28px}
+  .lotus-wrap{width:min(320px,84vw);margin-bottom:36px}
+  .br-label{font-size:28px}
+  /* journey */
+  .steps{gap:28px}
+  .step{grid-template-columns:64px 1fr;gap:4px 18px}
+  .step-n{width:64px;height:64px;font-size:30px}
+  .steps .line{left:32px}
+  .step h3{font-size:24px}
+  /* inspiration */
+  .em-wrap{width:min(300px,80vw)}
+  .verse{margin-top:32px}
+  .verse .tr{font-size:19px}
+  /* credentials */
+  .seal{padding:44px 22px 36px}
+  .seal .sn{font-size:30px}
+  .seal .st{font-size:19px}
+  .faq{margin-top:40px}
+  .fq summary{font-size:20px;padding:18px 0}
+  body.hi .fq summary{font-size:18px}
+  /* contact */
+  .form{margin-top:28px}
+  .form .rad{flex:1 1 auto;justify-content:center}
+  .direct{padding:32px 20px;border-radius:20px}
+  .direct .qr{width:180px;height:180px}
+  .wa-big{padding:10px 20px 10px 14px}
+  /* footer: leave room so the floating WhatsApp button doesn't cover the last line */
+  .foot{padding:64px 0 calc(100px + env(safe-area-inset-bottom))}
+  .f-name{font-size:26px}
+  .fab{width:56px;height:56px;right:calc(16px + env(safe-area-inset-right));bottom:calc(16px + env(safe-area-inset-bottom))}
+}
+@media (max-width:360px){
+  .nav{gap:8px}
+  .tools{gap:6px}
+  .brand b{font-size:15px;letter-spacing:.08em}
+  .hero h1{letter-spacing:.08em}
+  .direct .loc{letter-spacing:.14em}
 }
 @media (prefers-reduced-motion:reduce){
   *,*:before,*:after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
